@@ -27,10 +27,6 @@ def test_registration_form(open_browser):
 
     browser.element('#currentAddress').perform(command.js.scroll_into_view).click()
     browser.element('#currentAddress').set_value('Novomoscovskay Street 99')
-    # browser.element('#state').click()
-    # browser.all('[id^=react-select][id*=option]').element_by(
-    #     have.exact_text('NCR')
-    # ).click()
 
     browser.element('#submit').click()
 
